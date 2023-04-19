@@ -1,0 +1,179 @@
+@import url(https://fonts.google.com/specimen/Hanken+Grotesk);
+* {
+  font-family: 'Hanken', 'Grotesk', sans-serif;
+
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  height: 920px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div {
+  padding: 30px;
+}
+.box {
+  width: 300px;
+  height: 400px;
+  margin: 2px;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.heading-result {
+  color: hsl(225, 4%, 60%);
+  margin-bottom: 25px;
+  line-height: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#box-1 {
+  background-color: hsl(252, 100%, 67%);
+  text-align: center;
+}
+
+.circleBase {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.box-circle {
+  background-color: hsla(256, 72%, 46%, 1);
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle-score {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  line-height: 50px;
+}
+.circle-total {
+  color: hsl(225, 4%, 60%);
+  font-size: 12px;
+  position: absolute;
+  margin-top: 70px;
+  font-weight: 700;
+}
+.box-1-heading {
+  color: white;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.box-1-desc {
+  color: hsl(225, 4%, 60%);
+}
+
+.box-2-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: hsl(224, 30%, 27%);
+}
+.box-2-score {
+  color: red;
+  width: 110px;
+
+  margin-left: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  color: gold;
+  margin-bottom: 35px;
+  width: 100%;
+  text-align: justify;
+}
+
+.reaction {
+  color: red;
+}
+.memory {
+  color: gold;
+}
+
+.verbal {
+  color: turquoise;
+}
+
+.visual {
+  color: purple;
+}
+
+#btn {
+  background-color: hsl(224, 30%, 27%);
+  width: 200px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  margin: 0;
+  left: 54%;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: hsl(223, 25%, 39%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  #btn {
+    position: relative;
+    margin: 0;
+    left: 17%;
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+
+    bottom: 0;
+  }
+  @media screen and (max-width: 375px) {
+    .box {
+      width: 100%;
+    }
+  }
+}
